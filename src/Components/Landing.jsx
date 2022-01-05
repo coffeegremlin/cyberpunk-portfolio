@@ -43,6 +43,9 @@ const Landing = () => {
                   </form>
                 </div>
               </div>
+              <div className='box'>
+                © Nathan Mausert 2022
+              </div>
             </div>
           </div>
         </div>

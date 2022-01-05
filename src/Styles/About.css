@@ -1,8 +1,4 @@
-:theme {
-  color: red;
-  font-family: 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo', Courier, monospace;
-}
-
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
 
 /* Blink on and off */
 @keyframes blink {
@@ -32,24 +28,25 @@
 }
 
 html {
-	font-family: font-mono;
 	text-shadow:
     0 0 5px rgba(255,255,255,0.3);
-	background-color: darken(theme, 47%);
+	background-color: darken(red, 47%);
 	background-image: url(http://api.thumbr.it/whitenoise-200x200.png?background=00000000&noise=626262&density=15&opacity=15);
 	background-size: 100px;
-	color: theme;
+	color: red;
 	height: 100%;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 body {
+  font-family: 'Share Tech Mono', monospace;
 	margin: 0;
 	padding: 16px;
 }
 
 p,
 pre {
-	font-family: font-mono;
+	font-family: 'Share Tech Mono', monospace;
 	font-size: inherit;
 	line-height: 1;
 	margin: 0;
@@ -71,4 +68,23 @@ pre {
 	background: rgba(255,255,255,0.02);
 	animation: scanline 8s linear infinite;
 	pointer-events: none;
+}
+
+.hack {
+  border: none;
+  margin: 20px;
+  padding: 10px 40px;
+  width: auto;
+  overflow: visible;
+  outline: 0;
+  cursor: pointer;
+  background: 0 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  background: rgba(219, 14, 21, .2);
+  text-transform: uppercase
 }
