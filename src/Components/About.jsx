@@ -13,16 +13,16 @@ const About = (props) => {
 const tessier = String.raw`
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-        ______   ______     ______     ______     __     ______     ______        
+         ______   ______     ______     ______     __     ______     ______        
         /\__  _\ /\  ___\   /\  ___\   /\  ___\   /\ \   /\  ___\   /\  == \       
         \/_/\ \/ \ \  __\   \ \___  \  \ \___  \  \ \ \  \ \  __\   \ \  __<       
-          \ \_\  \ \_____\  \/\_____\  \/\_____\  \ \_\  \ \_____\  \ \_\ \_\     
+           \ \_\  \ \_____\  \/\_____\  \/\_____\  \ \_\  \ \_____\  \ \_\ \_\     
             \/_/   \/_____/   \/_____/   \/_____/   \/_/   \/_____/   \/_/ /_/     
                                                                                   
-        ______     ______     __  __     ______   ______     ______     __        
+         ______     ______     __  __     ______   ______     ______     __        
         /\  __ \   /\  ___\   /\ \_\ \   /\  == \ /\  __ \   /\  __ \   /\ \       
         \ \  __ \  \ \___  \  \ \  __ \  \ \  _-/ \ \ \/\ \  \ \ \/\ \  \ \ \____  
-        \ \_\ \_\  \/\_____\  \ \_\ \_\  \ \_\    \ \_____\  \ \_____\  \ \_____\ 
+         \ \_\ \_\  \/\_____\  \ \_\ \_\  \ \_\    \ \_____\  \ \_____\  \ \_____\ 
           \/_/\/_/   \/_____/   \/_/\/_/   \/_/     \/_____/   \/_____/   \/_____/ 
                                                                                   
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -49,7 +49,7 @@ See You Chiba City.
 `;
 
 let blink = document.querySelector('.blink');
-const code = document.querySelector('.code');
+// const code = document.querySelector('.code');
 
 const RandomNumber = (min, max) => {
 	return Math.floor(Math.random() * max) + min
@@ -59,10 +59,10 @@ const Delay = (time) => {
 	return new Promise((resolve) => setTimeout(resolve, time))
 };
 
-const ResetTerminal = () => {
-	code.innerHTML = '<span className="blink">█</span>';
-	blink = document.querySelector('.blink');
-};
+// const ResetTerminal = () => {
+// 	code.innerHTML = '<span className="blink">█</span>';
+// 	blink = document.querySelector('.blink');
+// };
 
 const RenderString = characters => {
 	blink.insertAdjacentHTML('beforeBegin', characters);

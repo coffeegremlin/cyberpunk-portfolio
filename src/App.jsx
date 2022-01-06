@@ -6,7 +6,7 @@ import './Styles/App.css';
 import Landing from './Components/Landing';
 import About from './Components/About';
 import Contact from './Components/Contact';
-import Nav from './Components/Nav';
+// import Nav from './Components/Nav';
 import Projects from './Components/Projects';
 import Resume from './Components/Resume';
 import Skills from './Components/Skills';
@@ -15,7 +15,6 @@ function App() {
 
   return (
     <main>
-
       <Routes>
         <Route path='/' element={<Landing/>} />
         <Route path='/about' element={<About/>} />
