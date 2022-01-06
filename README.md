@@ -67,4 +67,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### Tech and Styles used
 - [CyberPunk Terminal](https://codepen.io/remsrob/pen/ZRyqNx)
-- 
+- [Blink](https://codepen.io/alex-page/pen/zVYBxb)
