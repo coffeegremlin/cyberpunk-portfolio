@@ -6,9 +6,13 @@ import '../Styles/About.css'
 
 const About = (props) => {
 
+  function showICE () {
+    
+  }
+
   function animate () {
-    const commands = String.raw`samurai@internal-cdprojektred.com/:~ cd HAX
-samurai@internal-cdprojektred.com/HAX/:~ ls`;
+    const commands = String.raw`Krang@internal-Tessier-Ashpool/:~ cd 
+Krang@Dixie-Flatline/Wintermute/:~ ls`;
 
 const beep = String.raw`
 
@@ -38,7 +42,7 @@ const beep = String.raw`
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #`;
 
-const samurai = String.raw`
+const Krang = String.raw`
 
              ..    ,,,,,,    ,,,,,,      ,,,,, .,,,,     ,,,,, .,,,,,,,,,,,,,    .,,,,,,    ,,,,,  
  #############/   #######.   #######    ###### /####,    (#### /##############   #######.   #####  
@@ -100,30 +104,53 @@ const DrawCommands = async commands => {
 
 // Start the code
 (async()=> {
-	await DrawCommands("/:~ ssh samurai@internal-cdprojektred.com -p 2000");
-	await Delay(1000);
-	RenderString("samurai@internal-cdprojektred.com password:");
-	await Delay(5000);
-	RenderString("\n");
+	await DrawCommands("/:~ ssh coffeegremlin@internal-Tessier-Ashpool -p 2000");
+	await Delay(7000);
+	RenderString("coffeegremlin@internal-Tessier-Ashpool password: ");
+	await Delay(2000);
+	RenderString("npm run Dixie-Flatline.js");
 	await DrawCommands(commands);
-	RenderString('\nbeep.js    samurai.js\n\n');
-	await DrawCommands('samurai@internal-cdprojektred.com/HAX:~ node beep.js');
+	RenderString('\nKrang.js    BOCKRIS-SERVER.js\n\n');
+	await DrawCommands('coffeegremlin@internal-Tessier-Ashpool/ICE:~ node KRANG.js');
 	await DrawLines( beep );
-	await TypeString("\n\nSeems you're not among the sheep after all. Wanna play a game? Watch for the beeps.");
-	await Delay(3000);
+	await TypeString("\n\n ROM --McCoy Pauley-- LOG: Case, you better keep your promise after this. Sense/Net existence is no fun.");
+	await Delay(2000);
 	ResetTerminal();
-	await DrawCommands('samurai@internal-cdprojektred.com:~ KEY=3db7ca618243da1ba3bc76ab14bcf07b node samurai.js');
-	await DrawLines(samurai);
+	await DrawCommands('coffeegremlin@internal-Tessier-Ashpool:~ KEY=3db7ca618243da1ba3bc76ab14bcf07b node KRANG.js');
+	await DrawLines(Krang);
+  
 })();
+
   }
 
-  return (
-    <>
-      <button className='hack' onClick={animate}>Breach 'ABOUTME' firewall</button>
+  const Terminal = () => {
+    return(
+      <div>
+        <p>Krang MK. IV I.C.E. Breaker loaded.</p>
+        <p>Target: NATHAN MAUSERT PORTFOLIO Node.js</p>
+        <p>FILE: '../../AboutMe.txt'</p>
+        <h4>Ready Case?</h4>
+      <button className='hack' onClick={animate}>Let's ride console cowboy</button>
       <div class="scanline"></div>
       <pre class="code"><span class="blink">█</span></pre>
-    </>
+    </div>
+    )
+  }
+
+  const [showTerminal, setShowTerminal] = React.useState(false)
+  const onClick = () => setShowTerminal(true)
+
+  return (
+    <div>
+      <h1>BOCKRIS SYSTEMS GmbH</h1>
+      <p>Link established to ONO-SENDAI Cyberspace 7</p>
+      <p>Load Krang MK. IV I.C.E. Breaker?</p>
+      <button className='hack' type='submit' onClick={onClick}>YES</button>
+      {showTerminal ? <Terminal/> : null}
+    </div>
   )
+
+  
 }
 
 export default About
