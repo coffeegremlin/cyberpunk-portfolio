@@ -10,7 +10,7 @@ const About = (props) => {
     const commands = String.raw`NathanMausert@internal-Tessier-Ashpool/:~ cd 
     ../Ono-Sendai/Dixie-Flatline/FREESIDE-SERVER.js :~ ls`;
 
-const beep = String.raw`
+const tessier = String.raw`
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
         ______   ______     ______     ______     __     ______     ______        
@@ -25,20 +25,25 @@ const beep = String.raw`
         \ \_\ \_\  \/\_____\  \ \_\ \_\  \ \_\    \ \_____\  \ \_____\  \ \_____\ 
           \/_/\/_/   \/_____/   \/_/\/_/   \/_/     \/_____/   \/_____/   \/_____/ 
                                                                                   
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #`;
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+`;
 
 const Kuang = String.raw`
 About Me:
 I'm New York and Los Angeles based. When it comes to my work, 
 I have an interest in projects that improve users lives.
 I aim to solve problems on both interpersonal and logistical levels.
-I'm driven by a passion for providing tangible and meaningful results I can be proud of.
-My aim is to offer well thought out and expertly crafted solutions to complex problems with intention and strong communication skills.
-My background in medical welding and project management of prototype cryogenic pressure vessels gives me solid troubleshooting fundamentals 
+I'm driven by a passion for providing 
+tangible and meaningful results I can be proud of.
+My aim is to offer well thought out and expertly crafted solutions
+to complex problems with intention and strong communication skills.
+My background in medical welding and project management of prototype cryogenic
+pressure vessels gives me solid troubleshooting fundamentals 
 and an aptitude for managing expansive projects with unexpected issues.
 My education at General Assembly has given me practical hands-on experience with
 computer science fundamentals and the industries most in demand technologies.
-Currently, I'm looking for either a role in full stack web development, or game development!
+Currently, I'm looking for either a role in
+full stack web development, or game development!
 Also I'm a fan of William Gibson's Neuromancer.
 See You Chiba City.
 `;
@@ -55,7 +60,7 @@ const Delay = (time) => {
 };
 
 const ResetTerminal = () => {
-	code.innerHTML = '<span class="blink">█</span>';
+	code.innerHTML = '<span className="blink">█</span>';
 	blink = document.querySelector('.blink');
 };
 
@@ -95,39 +100,38 @@ const DrawCommands = async commands => {
 	await DrawCommands("/:~ ssh NathanMausert@internal-Tessier-Ashpool -p 2000");
 	await Delay(1000);
 	RenderString("NathanMausert@internal-Tessier-Ashpool password:");
-	await Delay(3000);
-  RenderString("\n")
-	RenderString("npm run Kuang.js ");
-	await DrawCommands(commands);
-	RenderString('\nbeep.js   FREESIDE-SERVER.js\n\n    BOCKRIS-SERVER.js\n\n');
-	await DrawCommands('NathanMausert@internal-Tessier-Ashpool/ICE:~ node KUANG.js');
-  await DrawCommands(commands);
-	await DrawLines( beep );
-	await TypeString("\n\ncd ./Hosaka-Storage/Ono-Sendai/ROM/McCoy-Pauley.py \nLOG: Case, you better keep your promise after this");
 	await Delay(2000);
-  ResetTerminal();
-	await DrawLines("\nNathanMausert@internal-Tessier-Ashpool:~ KEY=3db7ca618243da1ba3bc76ab14bcf07b node KUANG.js");
-  await DrawLines("\nCONNECTED")
-  await DrawLines("\n(freeside-server) -> git:(main) ls")
-  await DrawLines("\n(freeside-server) -> git:(main) ABOUTME.txt  package-lock.json  package.json  winter_mute")
-  await DrawLines("\n(freeside-server) -> git:(main) code .")
-	await DrawLines(Kuang);
-  await DrawLines("\n(freeside-server) -> git:(main) ")
-  
+  RenderString("\n");
+	await DrawCommands(commands);
+	await TypeString("npm run Kuang.js");
+	RenderString('\ntessier.js  FREESIDE-SERVER.js  BOCKRIS-SERVER.js\n\n');
+	await DrawCommands('NathanMausert@internal-Tessier-Ashpool/ICE:~ node tessier.js');
+	await DrawLines( tessier );
+  await TypeString("\n\ncd Hosaka-Storage/Ono-Sendai/ROM/McCoy-Pauley.py\n");
+	await Delay(2000);
+
+	await DrawCommands('/:~ ssh NathanMausert@internal-Tessier-Ashpool KEY=3db7ca618243da1ba3bc76ab14bcf07b node KUANG.js');
+  await DrawLines("\nCONNECTED");
+  await DrawLines("\n(freeside-server) -> git:(main) ls");
+  await DrawLines("\n(freeside-server) -> git:(main) ABOUTME.txt  package-lock.json  package.json  winter_mute");
+	await DrawLines( Kuang );
+  await DrawLines("\n(freeside-server) -> git:(main) ");
+  await TypeString("rm -rf McCoy-Pauley.py")
+  await DrawLines("\n(freeside-server) -> git:(main) ");
 })();
 
   }
 
-  const Terminal = () => {
+  const Terminal = (props) => {
     return(
       <div>
-        <p>Kuang MK IV I.C.E. Breaker loaded.</p>
-        <p>target.FREESIDE-SERVER.js /:~ NATHAN-MAUSERT-PORTFOLIO Node.js</p>
-        <p>FILE: '../../Information/AboutMe.txt'</p>
-        <h4>Ready Case?</h4>
+        <h5>Kuang MK IV I.C.E. Breaker loaded.</h5>
+        <h5>target.FREESIDE-SERVER.js /:~ NATHAN-MAUSERT-PORTFOLIO Node.js</h5>
+        <h5>FILE: '../../Information/ABOUTME.txt'</h5>
+        <h3>Ready Case?</h3>
       <button className='hack' onClick={animate}>Let's ride console cowboy</button>
-      <div class="scanline"></div>
-      <pre class=""><span class="blink">█</span></pre>
+      <div className="scanline"></div>
+      <pre><span className="blink">█</span></pre>
     </div>
     )
   }
@@ -136,13 +140,15 @@ const DrawCommands = async commands => {
   const onClick = () => setShowTerminal(true)
 
   return (
+    <>
     <div>
       <h1>BOCKRIS SYSTEMS GmbH</h1>
-      <p>Link established to Hosaka ONO-SENDAI Cyberspace 7</p>
-      <p>Load Kuang MK IV I.C.E. Breaker?</p>
+      <h5>Link established to Hosaka ONO-SENDAI Cyberspace 7</h5>
+      <h5>Load Kuang MK IV I.C.E. Breaker?</h5>
       <button className='hack' type='submit' onClick={onClick}>YES</button>
-      {showTerminal ? <Terminal/> : null}
     </div>
+    {showTerminal ? <Terminal/> : null}
+    </>
   )
   
 }
