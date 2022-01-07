@@ -127,63 +127,6 @@ pre {
   background: #000
 }
 
-@keyframes glitch {
-	2%,
-	64% {
-		transform: translate(2px, 0) skew(0deg);
-	}
-	4%,
-	60% {
-		transform: translate(-2px, 0) skew(0deg);
-	}
-	62% {
-		transform: translate(0, 0) skew(5deg);
-	}
-}
-
-.daemonButton {
-  border: none;
-  margin: 20px;
-  padding: 10px 40px;
-  width: auto;
-  overflow: visible;
-  outline: 0;
-  cursor: pointer;
-  background: 0 0;
-  color: inherit;
-  font: inherit;
-  line-height: normal;
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-  -webkit-appearance: none;
-  background: rgba(219, 14, 21, .2);
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.daemonStorage {
-	display: grid;
-  grid-row: 1;
-	grid-column: 1;
-	grid-template-columns: 0fr auto;
-  grid-template-rows: 0fr auto;
-  padding: 1%;
-}
-
-.daemonIcon {
-  animation: glitch 2s linear infinite;
-  padding: 1%;
-}
-
-.loading {
-  border: solid 3px #ff4d4d;
-  animation: boxShadow 1.6s infinite;
-  padding: 1em;
-  width: 100px;
-  height: 100px;
-}
-
 @media only screen and (max-width:1260px) {
   h3::after,
   h3::before {
