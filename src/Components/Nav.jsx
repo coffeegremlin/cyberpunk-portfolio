@@ -17,10 +17,10 @@ const DaemonChoice = () => {
       // onDrop={dragDrop}
       // onDragOver={loadDeck}
       >
-        <li>
+        
           {/* Add in navlink in buttons somehow vvvvv */}
-        <button className='daemonButton' to='/skills'>Skills.py</button>
-        </li>
+        <button className='daemonButton' to='/skills'><NavLink to='/skills'>Skills.py</NavLink></button>
+        
         <button className='daemonButton'>
           Projects.jsx
         </button>

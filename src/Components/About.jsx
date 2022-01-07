@@ -125,6 +125,7 @@ const DrawCommands = async commands => {
 	await DrawCommands('NathanMausert@internal-Tessier-Ashpool/ICE:~ node tessier.js');
 	await DrawLines( tessier );
   await TypeString("\n\ncd Hosaka-Storage/Ono-Sendai/ROM/McCoy-Pauley.py\n");
+  // add delete me message from mccoy here
 	await Delay(2000);
 
 	await DrawCommands('/:~ ssh NathanMausert@internal-Tessier-Ashpool KEY=3db7ca618243da1ba3bc76ab14bcf07b node KUANG.js');
