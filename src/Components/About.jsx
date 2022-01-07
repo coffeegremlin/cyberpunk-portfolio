@@ -3,6 +3,11 @@ import '../Styles/About.css'
 // import rendering from '../Assets/aboutFunction';
 
 // Assets
+import Crosshairs from '../Assets/210415_Skill_06.png'
+import Lightning from '../Assets/210415_Skill_07.png'
+import Moon from '../Assets/210415_Skill_04.png'
+import Disk from '../Assets/210414_Skill_01.png'
+import UI from '../Assets/Ui_03.png'
 
 const About = (props) => {
 
@@ -137,17 +142,94 @@ const DrawCommands = async commands => {
   }
 
   const [showTerminal, setShowTerminal] = React.useState(false)
+  const [showDaemons, setShowDaemons] = React.useState(false)
   const onClick = () => setShowTerminal(true)
+  const onLoadDaemons = () => setShowDaemons(true)
+
+    function loadDeck(daemon) {
+      daemon.preventDefault();
+    }
+    function dragStart(daemon) {
+      daemon.dataTransfer.setData('text', daemon.target.id);
+    }
+    function dragDrop(daemon) {
+      daemon.preventDefault();
+      let data = daemon.dataTransfer.getData('text');
+      daemon.target.appendChild(document.getElementById(data));
+    }
+
+  const DaemonChoice = () => {
+    return (
+      <div className='Daemons'>
+      <div
+      className='daemonStorage'
+      onDrop={dragDrop}
+      onDragOver={loadDeck}
+      >
+        <img
+        className='daemonIcon'
+        src={Crosshairs}
+        draggable='true'
+        onDragStart={dragStart}
+        width={'50px'}
+        alt="Project_Daemon"
+        />
+        <img
+        className='daemonIcon'
+        src={Lightning}
+        draggable='true'
+        onDragStart={dragStart}
+        width={'50px'}
+        alt="Contact_Daemon"
+        />
+        <img
+        className='daemonIcon'
+        src={Moon}
+        draggable='true'
+        onDragStart={dragStart}
+        width={'50px'}
+        alt="Resume_Daemon"
+        />
+        <img
+        className='daemonIcon'
+        src={Disk}
+        draggable='true'
+        onDragStart={dragStart}
+        width={'50px'}
+        alt="Skills_Daemon"
+        />
+      </div>
+
+      <br />
+
+      <div
+      className='loading'
+      onDrop={dragDrop}
+      onDragOver={loadDeck}
+      >
+        {/* <img 
+        src={UI}
+        alt="Load selected Daemon"
+        className='terminal'
+        onDrop={dragDrop}
+        onDragOver={loadDeck}
+        position='relative' /> */}
+      </div>
+    </div>
+    )
+  }
 
   return (
     <>
-    <div>
+    <button className='daemonButton' onClick={onLoadDaemons}>Available Daemons</button>
+    {showDaemons ? <DaemonChoice/> : null}
+    <div className=''>
       <h1>BOCKRIS SYSTEMS GmbH</h1>
       <h5>Link established to Hosaka ONO-SENDAI Cyberspace 7</h5>
       <h5>Load Kuang MK IV I.C.E. Breaker?</h5>
       <button className='hack' type='submit' onClick={onClick}>YES</button>
-    </div>
     {showTerminal ? <Terminal/> : null}
+    </div>
     </>
   )
   
