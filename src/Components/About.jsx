@@ -30,13 +30,13 @@ const About = (props) => {
 const tessier = String.raw`
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-    ______   ______     ______     ______     __     ______     ______        
+   ______   ______     ______     ______     __     ______     ______        
   /\__  _\ /\  ___\   /\  ___\   /\  ___\   /\ \   /\  ___\   /\  == \       
   \/_/\ \/ \ \  __\   \ \___  \  \ \___  \  \ \ \  \ \  __\   \ \  __<       
      \ \_\  \ \_____\  \/\_____\  \/\_____\  \ \_\  \ \_____\  \ \_\ \_\     
       \/_/   \/_____/   \/_____/   \/_____/   \/_/   \/_____/   \/_/ /_/     
                                                                             
-    ______     ______     __  __     ______   ______     ______     __        
+   ______     ______     __  __     ______   ______     ______     __        
   /\  __ \   /\  ___\   /\ \_\ \   /\  == \ /\  __ \   /\  __ \   /\ \       
   \ \  __ \  \ \___  \  \ \  __ \  \ \  _-/ \ \ \/\ \  \ \ \/\ \  \ \ \____  
    \ \_\ \_\  \/\_____\  \ \_\ \_\  \ \_\    \ \_____\  \ \_____\  \ \_____\ 
@@ -46,7 +46,10 @@ const tessier = String.raw`
 `;
 
 const Kuang = String.raw`
+<--- FILE READS --->
+
 About Me:
+
 I'm moving and soon to be Los Angeles based. When it comes to my work, 
 I have an interest in projects that improve users lives.
 I aim to solve problems on both interpersonal and logistical levels.
@@ -63,7 +66,11 @@ computer science fundamentals and the industries most in demand technologies.
 Currently, I'm looking for either a role in
 full stack web development, or game development!
 Also I'm a fan of William Gibson's Neuromancer.
-See you in Chiba City.
+
+See you in Chiba City,
+Nathan Mausert
+
+<--- FILE END --->
 `;
 
 let blink = document.querySelector('.blink');
