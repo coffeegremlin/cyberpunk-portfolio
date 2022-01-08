@@ -19,7 +19,8 @@ const DaemonChoice = () => {
       >
         
           {/* Add in navlink in buttons somehow vvvvv */}
-        <button className='daemonButton' to='/skills'><NavLink to='/skills'>Skills.py</NavLink></button>
+          <button className='daemonButton'><NavLink to='/'>Landing</NavLink></button>
+        {/* <button className='daemonButton' to='/skills'><NavLink to='/skills'>Skills.py</NavLink></button>
         
         <button className='daemonButton'>
           Projects.jsx
@@ -29,7 +30,7 @@ const DaemonChoice = () => {
         </button>
         <button className='daemonButton'>
           Conctact.html
-        </button>
+        </button> */}
       </ul>
     <br />
   </div>
