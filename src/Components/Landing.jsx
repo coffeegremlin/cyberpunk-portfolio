@@ -9,7 +9,9 @@ const Landing = () => {
     <>
     <body className=''>
       <div className='container on'>
-        <h3 className='title'>CONNECTION ESTABLISHED</h3>
+        <div class='scroll-container'>
+          <h3 className='title'>CONNECTION ESTABLISHED</h3>
+        </div>
         <div className='box--outer'>
           <div className='box'>
             <div className='box--inner'>

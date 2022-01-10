@@ -62,7 +62,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-size: 1em;
-  font-weight: 300
+  font-weight: 300;
 }
 
 .title::after,

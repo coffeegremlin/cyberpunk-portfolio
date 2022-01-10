@@ -11,30 +11,23 @@ import Disk from '../Assets/210414_Skill_01.png'
 import UI from '../Assets/Ui_03.png'
 
 const DaemonChoice = () => {
+
   return (
-    <div className='Daemons'>
-      <ul
-      className='daemonStorage'
-      // onDrop={dragDrop}
-      // onDragOver={loadDeck}
-      >
-        
-          {/* Add in navlink in buttons somehow vvvvv */}
-          <button className='daemonButton'><NavLink to='/'>Landing</NavLink></button>
-        {/* <button className='daemonButton' to='/skills'><NavLink to='/skills'>Skills.py</NavLink></button>
-        
-        <button className='daemonButton'>
-          Projects.jsx
-        </button>
-        <button className='daemonButton'>
-          Resume.pdf
-        </button>
-        <button className='daemonButton'>
-          Conctact.html
-        </button> */}
-      </ul>
-    <br />
-  </div>
+    <>
+      <button className='daemonButton'>Load Navigation Daemons</button>
+      {/* Add in conditional rendering you fuck */}
+      <div className='Daemons'>
+        <ul className='daemonStorage'>
+          <NavLink className='daemonLink' id='landing' to='/'>Landing.exe</NavLink>
+          <NavLink className='daemonLink' to='/about'>AboutKuangMkIv.py</NavLink>
+          <NavLink className='daemonLink' to='/projects'>Projects.json</NavLink>
+          <NavLink className='daemonLink' to='/resume'>Resume.PDF</NavLink>
+          <NavLink className='daemonLink' to='/skills'>Skills.json</NavLink>
+          <NavLink className='daemonLink' to='/contact'>Contact.md</NavLink>
+          </ul>
+      </div>
+      <br />
+    </>
   )
 }
 

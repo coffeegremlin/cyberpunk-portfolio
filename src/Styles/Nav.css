@@ -1,15 +1,21 @@
 @keyframes glitch {
 	2%,
 	64% {
-		transform: translate(2px, 0) skew(0deg);
+		transform: translate(5px, 0) skew(0deg);
 	}
 	4%,
 	60% {
-		transform: translate(-2px, 0) skew(0deg);
+		transform: translate(-10px, 0) skew(5deg);
 	}
 	62% {
-		transform: translate(0, 0) skew(5deg);
+		transform: translate(15px, 0) skew(10deg);
 	}
+}
+
+.daemonStorage {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
 }
 
 .daemonButton {
@@ -32,13 +38,38 @@
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: bold;
-  animation: glitch 2s linear infinite;
+
+  text-align: center;
+  font-size: 1vw;
 }
 
-.daemonStorage {
-	display: flex;
-  flex-direction: column;
-  padding: 1%;
+.daemonLink {
+  border: none;
+  margin: 20px;
+  padding: 10px 40px;
+  width: 20%;
+  height:20%;
+  overflow: visible;
+  outline: 0;
+  cursor: pointer;
+  background: 0 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  background: rgba(219, 14, 21, .2);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  animation: glitch 1s linear infinite;
+  text-align: center;
+  font-size: 1vw;
+}
+
+.daemonLink:hover {
+  animation-play-state: paused;
 }
 
 .loading {
@@ -48,3 +79,5 @@
   width: 100px;
   height: 100px;
 }
+
+/* add an @media for mobile design to make buttons fit and text in buttons resize */

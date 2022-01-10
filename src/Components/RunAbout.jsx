@@ -4,6 +4,7 @@ import DaemonChoice from './Nav';
 
 // Assets
 import animateAbout from './animateAbout';
+import { NavLink } from 'react-router-dom';
 
 const RunAbout = (props) => {
 
@@ -14,6 +15,7 @@ const RunAbout = (props) => {
 
     return (
       <>
+        <DaemonChoice/>
         <div className="scanline"></div>
         <pre><span className="blink">█</span></pre>
       </>

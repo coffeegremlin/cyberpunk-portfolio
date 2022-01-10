@@ -3,7 +3,6 @@ import '../Styles/About.css'
 import DaemonChoice from './Nav';
 
 // Assets
-import animateAbout from './animateAbout.js';
 import { NavLink } from 'react-router-dom';
 
 const About = (props) => {
@@ -12,20 +11,6 @@ const About = (props) => {
   const [showDaemons, setShowDaemons] = React.useState(false)
   const onClick = () => setShowTerminal(true)
   const onLoadDaemons = () => setShowDaemons(true)
-
-  // function loadDeck(daemon) {
-  //   daemon.preventDefault();
-  // }
-  // function dragStart(daemon) {
-  //   daemon.dataTransfer.setData('text', daemon.target.id);
-  // }
-  // function dragDrop(daemon) {
-  //   daemon.preventDefault();
-  //   let data = daemon.dataTransfer.getData('text');
-  //   daemon.target.appendChild(document.getElementById(data));
-  // }
-
-  
 
   const Terminal = (props) => {
     return(
@@ -41,8 +26,7 @@ const About = (props) => {
 
   return (
     <>
-    <button className='hack' onClick={onLoadDaemons}>Available Daemons</button>
-    {showDaemons ? <DaemonChoice/> : null}
+    <DaemonChoice/>
     <div className=''>
       <h1>BOCKRIS SYSTEMS GmbH</h1>
       <h5>Link established to Hosaka ONO-SENDAI Cyberspace 7</h5>
