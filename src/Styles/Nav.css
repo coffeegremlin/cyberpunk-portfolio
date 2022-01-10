@@ -1,14 +1,28 @@
-@keyframes glitch {
+@keyframes glitch1 {
 	2%,
 	64% {
-		transform: translate(5px, 0) skew(0deg);
+		transform: translate(1px, 0) skew(0deg);
 	}
 	4%,
 	60% {
-		transform: translate(-10px, 0) skew(5deg);
+		transform: translate(-5px, 0) skew(4deg);
 	}
 	62% {
-		transform: translate(15px, 0) skew(10deg);
+		transform: translate(8px, 0) skew(6deg);
+	}
+}
+
+@keyframes glitch2 {
+	2%,
+	64% {
+		transform: translate(1px, 0) skew(0deg);
+	}
+	4%,
+	60% {
+		transform: translate(5px, 0) skew(2deg);
+	}
+	62% {
+		transform: translate(-8px, 0) skew(7deg);
 	}
 }
 
@@ -22,8 +36,8 @@
   border: none;
   margin: 20px;
   padding: 10px 40px;
-  width: 20%;
-  height:20%;
+  width: auto;
+  height: auto;
   overflow: visible;
   outline: 0;
   cursor: pointer;
@@ -40,14 +54,14 @@
   font-weight: bold;
 
   text-align: center;
-  font-size: 1vw;
+  font-size: 2vw;
 }
 
 .daemonLink {
   border: none;
-  margin: 20px;
-  padding: 10px 40px;
-  width: 20%;
+  margin: 5px;
+  padding: 10px 20px;
+  width: 40%;
   height:20%;
   overflow: visible;
   outline: 0;
@@ -63,9 +77,15 @@
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: bold;
-  animation: glitch 1s linear infinite;
-  text-align: center;
-  font-size: 1vw;
+  font-size: 1.6vw;
+}
+
+#landing, #projects, #skills {
+  animation: glitch1 1s linear infinite;
+}
+
+#about, #resume, #contact {
+  animation: glitch2 1s linear infinite;
 }
 
 .daemonLink:hover {
@@ -80,4 +100,4 @@
   height: 100px;
 }
 
-/* add an @media for mobile design to make buttons fit and text in buttons resize */
+/* add an @media for mobile design to make buttons fit and text in buttons resize using font-size: 4vw; */
