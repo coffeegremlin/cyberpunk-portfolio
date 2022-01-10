@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import '../Styles/Nav.css'
 
 // Assets
+import { motion } from 'framer-motion';
 import Crosshairs from '../Assets/210415_Skill_06.png'
 import Lightning from '../Assets/210415_Skill_07.png'
 import Moon from '../Assets/210415_Skill_04.png'

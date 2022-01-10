@@ -10,6 +10,7 @@ import Contact from './Components/Contact';
 import Projects from './Components/Projects';
 import Resume from './Components/Resume';
 import Skills from './Components/Skills';
+import RunAbout from './Components/RunAbout';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Landing/>} />
         <Route path='/about' element={<About/>} />
+        <Route path='/runAbout' element={<RunAbout/>}/>
         <Route path='/contact' element={<Contact/>} />
         {/* <Route path='/nav' element={<Nav/>} /> */}
         <Route path='/projects' element={<Projects/>} />
