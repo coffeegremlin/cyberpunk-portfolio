@@ -5,6 +5,20 @@
   overflow: hidden
 }
 
+@keyframes glitch {
+	2%,
+	64% {
+		transform: translate(2px, 0) skew(0deg);
+	}
+	4%,
+	60% {
+		transform: translate(-2px, 0) skew(2deg);
+	}
+	62% {
+		transform: translate(0px, 0) skew(5deg);
+	}
+}
+
 span.amp {
   font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif !important;
   font-style: italic
@@ -196,6 +210,10 @@ body {
   -webkit-appearance: none;
   background: rgba(219, 14, 21, .2);
   text-transform: uppercase
+}
+
+#loginStatic:hover {
+  animation: glitch .15s linear infinite;
 }
 
 @media only screen and (max-width:1260px) {

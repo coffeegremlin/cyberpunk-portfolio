@@ -17,7 +17,7 @@ const Landing = () => {
             <div className='box--inner'>
               <div className='content'>
                 <div className='holder'>
-                  <b>Welcome to coffeegremlin subsystems</b>: the high-performance development solutions with&nbsp;a&nbsp;soul. Please enter your VIP user credentials.<br/>
+                  <b>Welcome to coffeegremlin subsystems</b>: the high-performance development solutions utilizing&nbsp;Winter_Mute&nbsp;AI. Please enter your VIP user credentials.<br/>
                   <div className='row'>
                     <div className='col col__left label'>
                       Login
@@ -26,7 +26,7 @@ const Landing = () => {
                       <input type="text" id="login" maxlength="32" value="COFFEEGREMLIN_GUEST" readonly />
                     </div>
                   </div>
-                  <form method="post" action="/about">
+                  <form>
                     <div className='row'>
                       <div className='col col__left label'>
                         Password
@@ -38,17 +38,19 @@ const Landing = () => {
                     </div>
                     {/* <b class="flash">ACCESS DENIED</b> */}
                     <div className='row'>
+                        <div className='submit' id='loginStatic'>ACCESS DENIED</div>
                         <NavLink className='submit' to='/about'>
-                        [login]
+                        [Execute: PasswordCrack.js]
                         </NavLink>
+                        {/* add in animation under this to run password crack */}
                     </div>
                   </form>
                 </div>
               </div>
-              <div className='box'>
-                © Nathan Mausert 2022
-              </div>
             </div>
+          </div>
+          <div className='box'>
+            © Nathan Mausert 2022
           </div>
         </div>
       </div>

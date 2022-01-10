@@ -1,9 +1,9 @@
 import React from 'react';
 import '../Styles/About.css'
 import DaemonChoice from './Nav';
+import { NavLink } from 'react-router-dom';
 
 // Assets
-import { NavLink } from 'react-router-dom';
 
 const About = (props) => {
 
@@ -20,7 +20,7 @@ const About = (props) => {
         <h5>FILE: '../../Information/ABOUTME.txt'</h5>
         <h3>Ready Case?</h3>
         <button className='hack'><NavLink to='/runAbout'>Let's ride console cowboy</NavLink></button>
-    </div>
+      </div>
     )
   }
 
