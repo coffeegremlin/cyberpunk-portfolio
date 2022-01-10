@@ -14,7 +14,7 @@
 
 body {
   min-height: 100vh;
-  background: url(https://image.ibb.co/h2hLAJ/bg.png) #000;
+  background : url(https://image.ibb.co/h2hLAJ/bg.png) #000;
   font-family: 'Share Tech Mono', monospace;
   display: flex;
   align-items: center;
@@ -27,12 +27,12 @@ body {
 /* pixelate the border  vvvvv */
 
 .card {
-  background: #191c29;
+  background: url(https://image.ibb.co/h2hLAJ/bg.png) #000;
   width: var(--card-width);
   height: var(--card-height);
-  padding: 3px;
+  padding: 10px;
   position: relative;
-  border-radius: 6px;
+  border-radius: 1px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -57,7 +57,7 @@ body {
   content: "";
   width: 104%;
   height: 102%;
-  border-radius: 8px;
+  border-radius: 3px;
   background-image: linear-gradient(
     var(--rotate)
     , #FF0000, #DE9B89 43%, #7E0000);
@@ -107,6 +107,7 @@ body {
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: bold;
+  width: 60%;
 }
 
 @keyframes spin {
