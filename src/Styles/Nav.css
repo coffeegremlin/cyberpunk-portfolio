@@ -50,9 +50,7 @@
   -webkit-appearance: none;
   background: rgba(219, 14, 21, .2);
   text-transform: uppercase;
-  font-size: 1.5rem;
   font-weight: bold;
-
   text-align: center;
   font-size: 2vw;
 }
@@ -62,6 +60,7 @@
   margin: 5px;
   padding: 10px 20px;
   width: 40%;
+  max-width: 400px;
   height:20%;
   overflow: visible;
   outline: 0;
@@ -75,9 +74,8 @@
   -webkit-appearance: none;
   background: rgba(219, 14, 21, .2);
   text-transform: uppercase;
-  font-size: 1.5rem;
   font-weight: bold;
-  font-size: 1.6vw;
+  font-size: 1.2vw;
 }
 
 #landing, #projects, #skills {

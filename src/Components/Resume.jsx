@@ -10,9 +10,7 @@ const Resume = () => {
     <>
       <DaemonChoice/>
       <div className='card'>
-        <button className='hack'>
-          <a href={PDF} target='_blank'>Download Resume.PDF</a>
-        </button>
+          <a href={PDF}>Download Resume.PDF</a>
         <div>
           {/* Add resume in text format here */}
         </div>
