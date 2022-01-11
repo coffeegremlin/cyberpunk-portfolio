@@ -8,9 +8,7 @@ import { NavLink } from 'react-router-dom';
 const About = (props) => {
 
   const [showTerminal, setShowTerminal] = useState(false)
-  const [showDaemons, setShowDaemons] = useState(false)
   const onClick = () => setShowTerminal(true)
-  const onLoadDaemons = () => setShowDaemons(true)
 
   const Terminal = (props) => {
     return(
