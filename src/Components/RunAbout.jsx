@@ -3,8 +3,7 @@ import '../Styles/About.css'
 import DaemonChoice from './Nav';
 
 // Assets
-import animateAbout from './animateAbout';
-import { NavLink } from 'react-router-dom';
+import animateAbout from './animate/animateAbout.js';
 
 const RunAbout = (props) => {
 

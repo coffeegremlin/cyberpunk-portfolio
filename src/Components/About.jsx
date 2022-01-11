@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../Styles/About.css'
 import DaemonChoice from './Nav';
 import { NavLink } from 'react-router-dom';
@@ -7,8 +7,8 @@ import { NavLink } from 'react-router-dom';
 
 const About = (props) => {
 
-  const [showTerminal, setShowTerminal] = React.useState(false)
-  const [showDaemons, setShowDaemons] = React.useState(false)
+  const [showTerminal, setShowTerminal] = useState(false)
+  const [showDaemons, setShowDaemons] = useState(false)
   const onClick = () => setShowTerminal(true)
   const onLoadDaemons = () => setShowDaemons(true)
 
