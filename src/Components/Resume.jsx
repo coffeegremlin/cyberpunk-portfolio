@@ -8,14 +8,15 @@ import PDF from '../Assets/Resume-NM.pdf'
 const Resume = () => {
   return (
     <>
-    <main>
       <DaemonChoice/>
       <div className='card'>
-        <button className='hack' href={PDF} target='_blank'>
-          Download Resume.PDF
+        <button className='hack'>
+          <a href={PDF} target='_blank'>Download Resume.PDF</a>
         </button>
+        <div>
+          {/* Add resume in text format here */}
+        </div>
       </div>
-    </main>
     </>
   )
 }

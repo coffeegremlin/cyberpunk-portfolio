@@ -7,7 +7,6 @@ import '../Styles/Landing.css'
 const Landing = () => {
   return (
     <>
-    <body className=''>
       <div className='container on'>
         <div class='scroll-container'>
           <h3 className='title'>CONNECTION ESTABLISHED</h3>
@@ -54,7 +53,6 @@ const Landing = () => {
           </div>
         </div>
       </div>
-    </body>
     </>
   )
 }
