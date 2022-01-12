@@ -59,7 +59,7 @@ pre {
 	display: block;
 	padding: 5px;
 	max-width: 100%;
-  font-size: 1.5vw;
+  font-size: 2vw;
 }
 
 .blink {
@@ -80,7 +80,7 @@ pre {
 	animation: scanline 8s linear infinite;
 	pointer-events: none;
 	max-width: 100%;
-  font-size: 1vw, 1vh;
+  font-size: 1vw;
 }
 
 .hack {
