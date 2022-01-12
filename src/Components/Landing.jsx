@@ -37,9 +37,9 @@ const Landing = () => {
                     </div>
                     {/* <b class="flash">ACCESS DENIED</b> */}
                     <div className='row'>
-                        <div className='submit' id='loginStatic'>ACCESS DENIED</div>
+                        <div className='submit' id='loginStatic'>// ACCESS DENIED //</div>
                         <NavLink className='submit' to='/about'>
-                        [Execute: PasswordCrack.js]
+                        [Hack Subsystems]
                         </NavLink>
                         {/* add in animation under this to run password crack */}
                     </div>

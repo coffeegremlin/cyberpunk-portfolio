@@ -213,7 +213,7 @@ body {
 }
 
 #loginStatic:hover {
-  animation: glitch .15s linear infinite;
+  animation: glitch .1s linear infinite;
 }
 
 @media only screen and (max-width:1260px) {
@@ -274,6 +274,9 @@ body {
   #login,
   #password {
     max-width: 70%
+  }
+  .submit {
+    font-size: 1rem;
   }
   .screen::after {
     max-width: 180px

@@ -48,7 +48,6 @@ body {
   background-repeat: repeat-x;
   overflow: auto;
   position: relative;
-  height: 100vh
 }
 
 p,
@@ -101,7 +100,7 @@ pre {
   -webkit-appearance: none;
   background: rgba(219, 14, 21, .2);
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -128,9 +127,9 @@ pre {
 }
 
 @media only screen and (max-width:1260px) {
-  h3::after,
-  h3::before {
-    width: 42px;
+  h5::after,
+  h5::before {
+    width: 1rem;
     height: 18px
   }
   .col.col__center,
@@ -143,8 +142,8 @@ pre {
   .box--outer::before {
     display: none
   }
-  h3::after,
-  h3::before {
+  h5::after,
+  h5::before {
     margin: 0 5px
   }
   .content {
@@ -157,15 +156,18 @@ pre {
   #submit {
     margin-bottom: 0
   }
+  .hack {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width:600px) {
   .container {
     font-size: .8em
   }
-  .h3::after,
-  .h3::before {
-    width: 4%;
+  h5::after,
+  h5::before {
+    width: 40%;
     height: 18px
   }
   .box--outer {
@@ -186,5 +188,9 @@ pre {
   }
   .screen::after {
     max-width: 180px
+  }
+  .hack, NavLink {
+    font-size: .5rem;
+    overflow: hidden;
   }
 }
