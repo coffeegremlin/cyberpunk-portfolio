@@ -20,6 +20,10 @@ const Contact = () => {
       <br/>
       <a href="https://twitter.com/NMausert" target="_blank" rel="noopener noreferrer">Twitter</a>
     </div>
+
+    <br/>
+
+      <img id="winterMute" src="https://media1.giphy.com/media/u5IJdDXKFfGWi01ydS/giphy.gif?cid=790b76112354d0bb423271737e333483edc765b4377ce017&rid=giphy.gif&ct=g" alt="Winter_Mute" />
     </>
   )
 }

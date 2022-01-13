@@ -134,6 +134,10 @@ a:hover {
   color: red;
 }
 
+#winterMute {
+  border: 2px solid red;
+}
+
 @media only screen and (max-width:1260px) {
   h5::after,
   h5::before {

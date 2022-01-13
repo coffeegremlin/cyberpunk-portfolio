@@ -68,3 +68,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### Tech and Styles used
 - [CyberPunk Terminal](https://codepen.io/remsrob/pen/ZRyqNx)
 - [Blink](https://codepen.io/alex-page/pen/zVYBxb)
+- [Magic Card](https://codepen.io/gayane-gasparyan/pen/jOmaBQK)
+- [Red Orb Gif](https://giphy.com/gifs/ui-hologram-rocktopus-u5IJdDXKFfGWi01ydS)
