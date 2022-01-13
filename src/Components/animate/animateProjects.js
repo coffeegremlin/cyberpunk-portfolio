@@ -1,31 +1,8 @@
 import { render } from "@testing-library/react";
 
-function animateProjects () {
+function animateProjects (props) {
   // const commands = String.raw`NathanMausert@internal-Tessier-Ashpool/:~ cd 
   // ../Ono-Sendai/Dixie-Flatline/FREESIDE-SERVER.js :~ ls`;
-
-// const tessier = String.raw`
-
-// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
-//  ______   ______     ______     ______     __     ______     ______        
-// /\__  _\ /\  ___\   /\  ___\   /\  ___\   /\ \   /\  ___\   /\  == \       
-// \/_/\ \/ \ \  __\   \ \___  \  \ \___  \  \ \ \  \ \  __\   \ \  __<       
-//    \ \_\  \ \_____\  \/\_____\  \/\_____\  \ \_\  \ \_____\  \ \_\ \_\     
-//     \/_/   \/_____/   \/_____/   \/_____/   \/_/   \/_____/   \/_/ /_/     
-                                                                          
-//  ______     ______     __  __     ______   ______     ______     __        
-// /\  __ \   /\  ___\   /\ \_\ \   /\  == \ /\  __ \   /\  __ \   /\ \       
-// \ \  __ \  \ \___  \  \ \  __ \  \ \  _-/ \ \ \/\ \  \ \ \/\ \  \ \ \____  
-//  \ \_\ \_\  \/\_____\  \ \_\ \_\  \ \_\    \ \_____\  \ \_____\  \ \_____\ 
-//   \/_/\/_/   \/_____/   \/_/\/_/   \/_/     \/_____/   \/_____/   \/_____/ 
-                                                                          
-// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
-// `;
-
-const LFG = <a href="https://lfgpls.herokuapp.com/">LINK</a>;
-const CodingCooler = <a href="https://codingcooler.herokuapp.com/">LINK</a>;
-const MonHun = <a href="https://monster-hunter-lists.herokuapp.com/">LINK</a>;
-const Dim = <a href="https://dimwoodadventure.netlify.app/">LINK</a>;
 
 const Project = String.raw`
 <--- FILE READS --->
@@ -41,9 +18,6 @@ const Project = String.raw`
         "3rd party API, Full CRUD,
         JWT authentication, Coupled
         front/back end."
-      },
-      Demo: {
-        "${LFG}"
       }
     },
 
@@ -55,9 +29,6 @@ const Project = String.raw`
       Technologies: {
         "Python, EJS, Authentication,
         Full CRUD, PostgreSQL."
-      },
-      Demo: {
-        "${CodingCooler}"
       }
     },
 
@@ -69,9 +40,6 @@ const Project = String.raw`
       Technologies: {
         "3rd party API, Full CRUD,
         Google OAuth, MongoDb."
-      },
-      Demo: {
-        "${MonHun}"
       }
     },
     Dim-Wood: {
@@ -81,9 +49,6 @@ const Project = String.raw`
       },
       Technologies: {
         "javaScript, HTML, CSS."
-      },
-      Demo: {
-        "${Dim}"
       }
     }
   ]
@@ -154,8 +119,6 @@ await TypeString("\n(freeside-server) -> git:(main) cd projects");
 RenderString("\n");
 RenderString('\nLFG  Coding-cooler  Monster-Hunter-Lists  Dim-Wood-Adventure\n');
 await DrawLines( Project );
-await TypeString("\ncd Hosaka-Storage/Ono-Sendai/ROM/McCoy-Pauley.py\n");
-RenderString("\n");
 await DrawLines("\n(freeside-server) -> git:(main) ");
 await TypeString("\n DISCONNECTED")
 })();

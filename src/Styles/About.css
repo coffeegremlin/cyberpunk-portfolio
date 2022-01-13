@@ -104,6 +104,10 @@ pre {
   font-weight: bold;
 }
 
+#deploydemos {
+  max-width: 90%;
+}
+
 #input1 {
   border: 2px solid #d7001e;
   margin: 10px 0;
@@ -124,6 +128,10 @@ pre {
 
 #input1::selection {
   background: #000
+}
+
+a:hover {
+  color: red;
 }
 
 @media only screen and (max-width:1260px) {
