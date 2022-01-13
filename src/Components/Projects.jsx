@@ -18,19 +18,18 @@ const Projects = (props) => {
       <DaemonChoice/>
         <h3>My Projects</h3>
         <div id='deploydemos'>
-            {/* make this better formatted */}
             <ul>
               <li>
-                <a href="https://lfgpls.herokuapp.com/">LFG</a>
+                <a href="https://lfgpls.herokuapp.com/" target="_blank" rel="noopener noreferrer">LFG</a> / <a href="https://github.com/coffeegremlin/lfg" target="_blank" rel="noopener noreferrer">GitHub</a>
               </li>
               <li>
-                <a href="https://codingcooler.herokuapp.com/">CODINGCOOLER</a>
+                <a href="https://codingcooler.herokuapp.com/" target="_blank" rel="noopener noreferrer">CODINGCOOLER</a> / <a href="https://github.com/coffeegremlin/codingcooler" target="_blank" rel="noopener noreferrer">GitHub</a>
               </li>
               <li>
-                <a href="https://monster-hunter-lists.herokuapp.com/">Monster-Hunter</a>
+                <a href="https://monster-hunter-lists.herokuapp.com/" target="_blank" rel="noopener noreferrer">Monster-Hunter</a> / <a href="https://github.com/coffeegremlin/Monster-Hunter-Lists" target="_blank" rel="noopener noreferrer">GitHub</a>
               </li>
               <li>
-                <a href="https://dimwoodadventure.netlify.app/">Dim-Wood</a>
+                <a href="https://dimwoodadventure.netlify.app/" target="_blank" rel="noopener noreferrer">Dim-Wood</a> / <a href="https://github.com/coffeegremlin/Dim-Wood-Adventure" target="_blank" rel="noopener noreferrer">GitHub</a>
               </li>
             </ul>
             
