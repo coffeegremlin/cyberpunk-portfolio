@@ -39,6 +39,7 @@ const Landing = () => {
                     <div className='row'>
                         <div className='submit' id='loginStatic'>--- ACCESS DENIED ---</div>
                         {/* Add in usestate so onclick it renders the hack button */}
+                        {/* Set usestate False to be the first button instead of null and set true to be the actual login/hack button */}
                         <NavLink className='submit' to='/about'>
                         [ Hack Subsystems ]
                         </NavLink>
