@@ -38,8 +38,9 @@ const Landing = () => {
                     {/* <b class="flash">ACCESS DENIED</b> */}
                     <div className='row'>
                         <div className='submit' id='loginStatic'>--- ACCESS DENIED ---</div>
+                        {/* Add in usestate so onclick it renders the hack button */}
                         <NavLink className='submit' to='/about'>
-                        [Hack Subsystems]
+                        [ Hack Subsystems ]
                         </NavLink>
                         {/* add in animation under this to run password crack */}
                     </div>
@@ -49,7 +50,7 @@ const Landing = () => {
             </div>
           </div>
           <div className='box'>
-            © Nathan Mausert 2022
+            © Nathan K Mausert 2022
           </div>
         </div>
       </div>

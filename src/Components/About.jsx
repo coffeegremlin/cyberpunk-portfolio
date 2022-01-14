@@ -31,7 +31,7 @@ const About = (props) => {
       <h1>BOCKRIS SYSTEMS GmbH</h1>
       <h5>Link established to Hosaka ONO-SENDAI Cyberspace 7</h5>
       <h5>Load Kuang MK IV I.C.E. Breaker?</h5>
-      <button className='hack' type='submit' onClick={onClick}>YES</button>
+      <button className='daemonLink' type='submit' onClick={onClick}>[YES]</button>
       {showTerminal ? <Terminal/> : null}
     </div>
     </>

@@ -18,7 +18,7 @@ const DaemonChoice = () => {
       <div className='Daemons'>
         <ul className='daemonStorage'>
           <NavLink className='daemonLink' id='landing' to='/'>Landing.exe</NavLink>
-          <NavLink className='daemonLink' id='about' to='/about'>AboutKuangMkIv.py</NavLink>
+          <NavLink className='daemonLink' id='about' to='/about'>About.py</NavLink>
           <NavLink className='daemonLink' id='projects' to='/projects'>Projects.json</NavLink>
           <NavLink className='daemonLink' id='resume' to='/resume'>Resume.PDF</NavLink>
           {/* <NavLink className='daemonLink' id='skills' to='/skills'>Skills.json</NavLink> */}
