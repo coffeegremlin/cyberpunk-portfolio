@@ -3,7 +3,7 @@ import DaemonChoice from './Nav';
 import '../Styles/Resume.css'
 
 // Assets
-import PDF from '../Assets/Resume-NM.pdf'
+import PDF from '../Assets/Mausert-Resume.pdf'
 
 const Resume = () => {
   return (
@@ -12,7 +12,7 @@ const Resume = () => {
       <div className='card'>
           <a href={PDF} target="_blank" rel="noopener noreferrer">Download Resume.PDF</a>
         <div>
-          {/* Add resume in text format here */}
+          {/* Add resume in text format here? */}
         </div>
       </div>
     </>

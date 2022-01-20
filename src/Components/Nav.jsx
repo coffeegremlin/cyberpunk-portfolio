@@ -13,7 +13,7 @@ const DaemonChoice = () => {
 
   return (
     <>
-      <button className='daemonButton'>Load Navigation Daemons</button>
+      <button className='daemonButton'>Navigation Controls</button>
       {/* Add in conditional rendering you fuck */}
       <div className='Daemons'>
         <ul className='daemonStorage'>
