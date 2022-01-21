@@ -21,7 +21,6 @@ const RunAbout = (props) => {
       ScrollRef.current.scrollIntoView({ behavior: 'smooth' })
       return;
     }
-    // ScrollRef.current.scrollIntoView({ behavior: 'smooth' });
     const id = setInterval(timer, 1000);
     return () => clearInterval(id);
   }, [currentCount])

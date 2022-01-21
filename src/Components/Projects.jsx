@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import DaemonChoice from './Nav';
 import '../Styles/About.css'
 // add styles
@@ -8,28 +8,40 @@ import animateProjects from './animate/animateProjects.js';
 
 const Projects = () => {
 
-  const divRef = useRef(null);
-  const Seconds = 100;
+  const ScrollRef = useRef(null);
+
+  const [currentCount, setCount] = useState(26);
+  const timer = () => setCount(currentCount - 1);
 
   useEffect(() => {
     animateProjects();
-    const interval = setInterval(() => {
-      divRef.current.scrollIntoView({ behavior: 'smooth' });
-    }, Seconds);
-    return () => clearInterval(interval);
   }, [])
+
+  useEffect(() => {
+    if (currentCount <= 0) {
+      ScrollRef.current.scrollIntoView({ behavior: 'smooth' })
+      return;
+    }
+    const id = setInterval(timer, 1000);
+    return () => clearInterval(id);
+  }, [currentCount])
 
   return (
     <>
       <DaemonChoice/>
         <h3>Technical Project Index</h3>
-        <div className="scanline"></div>
-      <pre><span className="blink" ref={divRef}>█</span></pre>
-      <div>
-        <a href="https://lfgpls.herokuapp.com/" target="_blank" rel="noopener noreferrer">LFG</a>/<a href="https://github.com/coffeegremlin/lfg" target="_blank" rel="noopener noreferrer">GitHub</a> - <a href="https://codingcooler.herokuapp.com/" target="_blank" rel="noopener noreferrer">CODINGCOOLER</a>/<a href="https://github.com/coffeegremlin/codingcooler" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <div className='daemonLink'>
+          <a href="https://lfgpls.herokuapp.com/" target="_blank" rel="noopener noreferrer">LFG</a> / <a href="https://github.com/coffeegremlin/lfg" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <br/>
+          <a href="https://codingcooler.herokuapp.com/" target="_blank" rel="noopener noreferrer">CODINGCOOLER</a> / <a href="https://github.com/coffeegremlin/codingcooler" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <br/>
+          <a href="https://monster-hunter-lists.herokuapp.com/" target="_blank" rel="noopener noreferrer">Monster-Hunter</a> / <a href="https://github.com/coffeegremlin/Monster-Hunter-Lists" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <br/>
+          <a href="https://dimwoodadventure.netlify.app/" target="_blank" rel="noopener noreferrer">Dim-Wood</a> / <a href="https://github.com/coffeegremlin/Dim-Wood-Adventure" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
         <br/>
-        <a href="https://monster-hunter-lists.herokuapp.com/" target="_blank" rel="noopener noreferrer">Monster-Hunter</a>/<a href="https://github.com/coffeegremlin/Monster-Hunter-Lists" target="_blank" rel="noopener noreferrer">GitHub</a> - <a href="https://dimwoodadventure.netlify.app/" target="_blank" rel="noopener noreferrer">Dim-Wood</a>/<a href="https://github.com/coffeegremlin/Dim-Wood-Adventure" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </div>
+        <div className="scanline"></div>
+        <pre><span className="blink" ref={ScrollRef}>█</span></pre>
       <br/>
     </>
   )

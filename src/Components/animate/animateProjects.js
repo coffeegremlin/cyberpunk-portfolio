@@ -3,9 +3,9 @@ function animateProjects () {
   // ../Ono-Sendai/Dixie-Flatline/FREESIDE-SERVER.js :~ ls`;
 
 const Project = String.raw`
-<--- FILE READS --->
 
   const Projects = [
+
     Lfg: {
       Desc: {
         "Full Stack React App made in
@@ -40,6 +40,7 @@ const Project = String.raw`
         Google OAuth, MongoDb."
       }
     },
+
     Dim-Wood: {
       Desc: {
         "Full adventure game made 
@@ -49,9 +50,10 @@ const Project = String.raw`
         "javaScript, HTML, CSS."
       }
     }
+
   ]
 
-<--- FILE END --->
+export default Projects
 `;
 
 let blink = document.querySelector('.blink');

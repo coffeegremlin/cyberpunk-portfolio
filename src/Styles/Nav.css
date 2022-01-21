@@ -78,12 +78,13 @@
   font-size: 1.2vw;
 }
 
-#landing, #projects, #skills {
-  animation: glitch1 1s linear infinite;
-}
-
-#about, #resume, #contact {
-  animation: glitch2 1s linear infinite;
+#landing:hover, #about:hover, #projects:hover, #resume:hover, #contact:hover {
+  animation-play-state: paused;
+  animation: glitch .8s linear infinite;
+  color: #ffffff;
+  background: url(https://image.ibb.co/h2hLAJ/bg.png) #000;
+  transition: opacity .5s;
+  text-shadow: 0 0 5px rgba(219, 14, 21, .8);
 }
 
 .daemonLink:hover {

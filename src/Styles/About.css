@@ -134,11 +134,19 @@ a:hover {
   color: red;
 }
 
+#contactlinks {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
 #winterMute {
+  position: absolute;
+  justify-content: center;
   border: 2px solid red;
-  max-width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  max-width: 90%;
+
 }
 
 @media only screen and (max-width:1260px) {

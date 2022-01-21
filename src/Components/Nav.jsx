@@ -13,17 +13,17 @@ const DaemonChoice = () => {
 
   return (
     <>
-      <button className='daemonButton'>Navigation Controls</button>
       {/* Add in conditional rendering you fuck */}
       <div className='Daemons'>
-        <ul className='daemonStorage'>
+        <h1>Navigation Controls</h1>
+        <div className='daemonStorage'>
           <NavLink className='daemonLink' id='landing' to='/'>Landing.exe</NavLink>
           <NavLink className='daemonLink' id='about' to='/about'>About.py</NavLink>
           <NavLink className='daemonLink' id='projects' to='/projects'>Projects.json</NavLink>
           <NavLink className='daemonLink' id='resume' to='/resume'>Resume.PDF</NavLink>
           {/* <NavLink className='daemonLink' id='skills' to='/skills'>Skills.json</NavLink> */}
           <NavLink className='daemonLink' id='contact' to='/contact'>Contact.md</NavLink>
-          </ul>
+        </div>
       </div>
       <br />
     </>
