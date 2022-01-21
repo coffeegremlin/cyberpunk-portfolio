@@ -1,29 +1,28 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import '../Styles/About.css'
 import DaemonChoice from './Nav';
 
 // Assets
 import animateAbout from './animate/animateAbout.js';
 
-const RunAbout = (props) => {
+const RunAbout = () => {
 
-  const TextLoad = () => {
-    useEffect(() => {
-      animateAbout();
-    }, []);
+  const divRef = useRef(null);
+  const Seconds = 100;
 
-    return (
-      <>
-        <DaemonChoice/>
-        <div className="scanline"></div>
-        <pre><span className="blink">█</span></pre>
-      </>
-    )
-  }
+  useEffect(() => {
+    animateAbout();
+    const interval = setInterval(() => {
+      divRef.current.scrollIntoView({ behavior: 'smooth' });
+    }, Seconds);
+    return () => clearInterval(interval);
+  }, [])
 
   return (
     <>
-    <TextLoad/>
+      <DaemonChoice/>
+      <div className="scanline"></div>
+      <pre><span className="blink" ref={divRef}>█</span></pre>
     </>
   )
 }

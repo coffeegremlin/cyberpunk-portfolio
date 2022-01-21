@@ -1,10 +1,8 @@
-import { render } from "@testing-library/react";
-
 function animateAbout () {
-  const commands = String.raw`NathanKesavaMausert@internal-Tessier-Ashpool/:~ cd 
-  ../Ono-Sendai/Dixie-Flatline/FREESIDE-SERVER.js :~ ls`;
+  // const commands = String.raw`NathanKesavaMausert@internal-Tessier-Ashpool/:~ cd 
+  // ../Ono-Sendai/Dixie-Flatline/FREESIDE-SERVER.js :~ ls`;
 
-const tessier = String.raw`
+  const tessier = String.raw`
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
  ______   ______     ______     ______     __     ______     ______        
@@ -22,7 +20,7 @@ const tessier = String.raw`
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 `;
 
-const Kuang = String.raw`
+  const Kuang = String.raw`
 <--- FILE READS --->
 
 About Me:
@@ -50,16 +48,16 @@ Nathan Kesava Mausert
 <--- FILE END --->
 `;
 
-let blink = document.querySelector('.blink');
+  let blink = document.querySelector('.blink');
 // const code = document.querySelector('.code');
 
-const RandomNumber = (min, max) => {
-return Math.floor(Math.random() * max) + min
-};
+  const RandomNumber = (min, max) => {
+    return Math.floor(Math.random() * max) + min
+  };
 
-const Delay = (time) => {
-return new Promise((resolve) => setTimeout(resolve, time))
-};
+  const Delay = (time) => {
+    return new Promise((resolve) => setTimeout(resolve, time))
+  };
 
 // const ResetTerminal = () => {
 // 	code.innerHTML = '<span className="blink">█</span>';
@@ -68,77 +66,74 @@ return new Promise((resolve) => setTimeout(resolve, time))
 
 // ^^^^^ FIX THIS ^^^^^
 
-const RenderString = characters => {
-blink.insertAdjacentHTML('beforeBegin', characters);
-};
+  const RenderString = characters => {
+    blink.insertAdjacentHTML('beforeBegin', characters);
+  };
 
-const TypeString = async characters => {
-for(const character of characters.split('')) {
-  await Delay(RandomNumber(20, 20));
-  RenderString(character);
-}
-}
+  const TypeString = async characters => {
+    for(const character of characters.split('')) {
+      await Delay(RandomNumber(20, 20));
+      RenderString(character);
+    }
+  }
 
-const DrawLines = async ( characters, min = 50, max = 500 ) => {
-for(const line of characters.split('\n')) {
-  await Delay(RandomNumber(min, max));
-  RenderString(`${line}\n`);
-}
-}
+  const DrawLines = async ( characters, min = 50, max = 500 ) => {
+    for(const line of characters.split('\n')) {
+      await Delay(RandomNumber(min, max));
+      RenderString(`${line}\n`);
+    }
+  }
 
-const DrawCommands = async commands => {
-for( const line of commands.split('\n')){
-  // Seperate the directory and the command
-  const [currentDir, command] = line.split(':~ ');
+  const DrawCommands = async commands => {
+    for( const line of commands.split('\n')){
+    // Seperate the directory and the command
+      const [currentDir, command] = line.split(':~ ');
+      // Print the directory, type the command and finish with new line
+      RenderString(`${currentDir}:~ `);
+      await TypeString(command);
+      RenderString('\n');
+    }
+  }
 
-  // Print the directory, type the command and finish with new line
-  RenderString(`${currentDir}:~ `);
-  await TypeString(command);
-  RenderString('\n');
-}
-}
-
-(async()=> {
-await DrawCommands("/:~ ssh NathanKesavaMausert@internal-Tessier-Ashpool -p 2000");
-await Delay(1000);
-RenderString("NathanKesavaMausert@internal-Tessier-Ashpool password: LOCKED");
-await Delay(2000);
-RenderString("\n");
-await TypeString("npm run Kuang.js");
-await Delay(1000);
-RenderString("\n");
-RenderString('ls -a');
-await Delay(500);
-RenderString('\ntessier.js  FREESIDE-SERVER.js  BOCKRIS-SERVER.js');
-RenderString("\n");
-await DrawCommands('NathanKesavaMausert@internal-Tessier-Ashpool/ICE:~ ');
-RenderString("\n");
-await TypeString("npm run tessier.js");
-await DrawLines( tessier );
-await TypeString("\ncd Hosaka-Storage/Ono-Sendai/ROM/McCoy-Pauley.py\n");
-RenderString("\n");
-await TypeString("MESSAGE FROM: DixieFlatline 127.0.0.1");
-RenderString("\n");
-await TypeString('// You better keep your promise Case. Delete me after this. //')
-RenderString("\n");
-await Delay(2000);
-
-await DrawCommands('/:~ ssh NathanKesavaMausert@internal-Tessier-Ashpool');
-RenderString("\n");
-await TypeString('KEY=3db7ca618243da1ba3bc76ab14bcf07b');
-RenderString("\n");
-await DrawLines("\nCONNECTED");
-await Delay(1000);
-await DrawLines("\n(freeside-server) -> git:(main) ls");
-await DrawLines("\n(freeside-server) -> git:(main) ");
-RenderString('\nABOUTME.txt  package-lock.json  package.json  winter_mute\n');
-await DrawLines( Kuang );
-await DrawLines("\n(freeside-server) -> git:(main) ");
-await TypeString("rm -rf McCoy-Pauley.py")
-await DrawLines("\n(freeside-server) -> git:(main) ");
-await TypeString("\n DISCONNECTED")
-})();
-
+  (async()=> {
+  await DrawCommands("/:~ ssh NathanKesavaMausert@internal-Tessier-Ashpool -p 2000");
+  await Delay(1000);
+  RenderString("NathanKesavaMausert@internal-Tessier-Ashpool password: LOCKED");
+  await Delay(2000);
+  RenderString("\n");
+  await TypeString("npm run Kuang.js");
+  await Delay(1000);
+  RenderString("\n");
+  RenderString('ls -a');
+  await Delay(500);
+  RenderString('\ntessier.js  FREESIDE-SERVER.js  BOCKRIS-SERVER.js');
+  RenderString("\n");
+  await DrawCommands('NathanKesavaMausert@internal-Tessier-Ashpool/ICE:~ ');
+  RenderString("\n");
+  await TypeString("npm run tessier.js");
+  await DrawLines( tessier );
+  await TypeString("\ncd Hosaka-Storage/Ono-Sendai/ROM/McCoy-Pauley.py\n");
+  RenderString("\n");
+  await TypeString("MESSAGE FROM: DixieFlatline 127.0.0.1");
+  RenderString("\n");
+  await TypeString('// You better keep your promise Case. Delete me after this. //')
+  RenderString("\n");
+  await Delay(2000);
+  await DrawCommands('/:~ ssh NathanKesavaMausert@internal-Tessier-Ashpool');
+  RenderString("\n");
+  await TypeString('KEY=3db7ca618243da1ba3bc76ab14bcf07b');
+  RenderString("\n");
+  await DrawLines("\nCONNECTED");
+  await Delay(1000);
+  await DrawLines("\n(freeside-server) -> git:(main) ls");
+  await DrawLines("\n(freeside-server) -> git:(main) ");
+  RenderString('\nABOUTME.txt  package-lock.json  package.json  winter_mute\n');
+  await DrawLines( Kuang );
+  await DrawLines("\n(freeside-server) -> git:(main) ");
+  await TypeString("rm -rf McCoy-Pauley.py")
+  await DrawLines("\n(freeside-server) -> git:(main) ");
+  await TypeString("\n DISCONNECTED")
+  })();
 }
 
 export default animateAbout
