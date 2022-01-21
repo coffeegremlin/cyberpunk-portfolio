@@ -1,6 +1,4 @@
-import { render } from "@testing-library/react";
-
-function animateProjects (props) {
+function animateProjects () {
   // const commands = String.raw`NathanMausert@internal-Tessier-Ashpool/:~ cd 
   // ../Ono-Sendai/Dixie-Flatline/FREESIDE-SERVER.js :~ ls`;
 
