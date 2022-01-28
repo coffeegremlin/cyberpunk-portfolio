@@ -28,7 +28,7 @@ const About = (props) => {
     <div>
       <h1>BOCKRIS SYSTEMS GmbH</h1>
       <h5>Link established to Hosaka ONO-SENDAI Cyberspace 7</h5>
-      <div className='daemonLink'>
+      <div>
         <h3>-- WARNING --</h3>
         <h1>ABOUTME.txt Access Denied</h1>
         <h3>-- WARNING --</h3>
