@@ -4,7 +4,8 @@ import '../Styles/Landing.css'
 
 // Assets
 
-const Landing = () => {
+const Landing = (props) => {
+
   return (
     <>
       <div className='container on'>
@@ -31,17 +32,18 @@ const Landing = () => {
                         Password
                       </div>
                       <div className='col col__center'>
-                        <input type="password" id="password" name="password" placeholder="" data-error="" maxlength="32" autocomplete="new-password"
-                        autofocus="true"/>
+                        <input type="password" id="password" name="password" placeholder="chibacity" data-error="" maxlength="9" autocomplete="off"
+                        autofocus="true" to='/about'/>
                       </div>
                     </div>
                     {/* <b class="flash">ACCESS DENIED</b> */}
                     <div className='row'>
-                        <div className='submit' id='loginStatic'>--- ACCESS DENIED ---</div>
+                        {/* <div className='submit' id='loginStatic'>--- ACCESS DENIED ---</div> */}
                         {/* Add in usestate so onclick it renders the hack button */}
                         {/* Set usestate False to be the first button instead of null and set true to be the actual login/hack button */}
-                        <NavLink className='submit' to='/about'>
-                        [ Hack Subsystems ]
+                        <br/>
+                        <NavLink type='submit' className='submit' id='loginstatic' to='/about'>
+                        [ Hack subsystems ]
                         </NavLink>
                         {/* add in animation under this to run password crack */}
                     </div>
