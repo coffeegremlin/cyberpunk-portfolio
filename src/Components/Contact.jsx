@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import DaemonChoice from './Nav';
 import '../Styles/About.css'
 
@@ -16,15 +16,15 @@ const Contact = () => {
         <a
           href="mailto:natemausert@gmail.com"
         >
-          natemausert@gmail.com
+          Email: Business
         </a>
 
-        <a
+        {/* <a
           href="tel:5187087160"
           onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"
         >
           518-708-7160
-        </a>
+        </a> */}
 
         <a
           href="https://www.linkedin.com/in/nathanmausert/"
@@ -32,6 +32,14 @@ const Contact = () => {
           rel="noopener noreferrer"
         >
           LinkedIn
+        </a>
+
+        <a
+          href='https://calendly.com/natemausert'
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Calendly
         </a>
 
         <a

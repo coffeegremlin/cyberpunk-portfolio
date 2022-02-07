@@ -22,21 +22,28 @@ const About = (props) => {
     )
   }
 
+  const Terminal1 = () => {
+    return (
+      <>
+        <div>
+          <h1>BOCKRIS SYSTEMS GmbH</h1>
+          <h5>Link established to Hosaka ONO-SENDAI Cyberspace 7</h5>
+          <div>
+            <h3>-- WARNING --</h3>
+            <h1>ABOUTME.txt Access Denied</h1>
+            <h3>-- WARNING --</h3>
+          </div>
+          <h5>Load Kuang MK IV I.C.E. Breaker?</h5>
+          <button className='daemonLink' type='submit' onClick={onClick}>[YES]</button>
+        </div>
+      </>
+    )
+  }
+
   return (
     <>
     <DaemonChoice/>
-    <div>
-      <h1>BOCKRIS SYSTEMS GmbH</h1>
-      <h5>Link established to Hosaka ONO-SENDAI Cyberspace 7</h5>
-      <div>
-        <h3>-- WARNING --</h3>
-        <h1>ABOUTME.txt Access Denied</h1>
-        <h3>-- WARNING --</h3>
-      </div>
-      <h5>Load Kuang MK IV I.C.E. Breaker?</h5>
-      <button className='daemonLink' type='submit' onClick={onClick}>[YES]</button>
-      {showTerminal ? <Terminal/> : null}
-    </div>
+      {showTerminal ? <Terminal/> : <Terminal1/>}
     <br/>
     </>
   )
