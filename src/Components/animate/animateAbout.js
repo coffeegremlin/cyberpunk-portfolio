@@ -1,5 +1,5 @@
 function animateAbout () {
-  // const commands = String.raw`NathanKesavaMausert@internal-Tessier-Ashpool/:~ cd 
+  // const commands = String.raw`NathanKMausert@internal-Tessier-Ashpool/:~ cd 
   // ../Ono-Sendai/Dixie-Flatline/FREESIDE-SERVER.js :~ ls`;
 
   const tessier = String.raw`
@@ -43,7 +43,7 @@ or hybrid entry-level role in game development!
 Also I'm a fan of William Gibson's Neuromancer.
 
 See you in Chiba City,
-Nathan Kesava Mausert
+Nathan K Mausert
 
 <--- FILE END --->
 `;
@@ -96,9 +96,9 @@ Nathan Kesava Mausert
   }
 
   (async()=> {
-  await DrawCommands("/:~ ssh NathanKesavaMausert@internal-Tessier-Ashpool -p 2000");
+  await DrawCommands("/:~ ssh NathanKMausert@internal-Tessier-Ashpool -p 2000");
   await Delay(1000);
-  RenderString("NathanKesavaMausert@internal-Tessier-Ashpool password: LOCKED");
+  RenderString("NathanKMausert@internal-Tessier-Ashpool password: LOCKED");
   await Delay(2000);
   RenderString("\n");
   await TypeString("npm run Kuang.js");
@@ -108,7 +108,7 @@ Nathan Kesava Mausert
   await Delay(500);
   RenderString('\ntessier.js  FREESIDE-SERVER.js  BOCKRIS-SERVER.js');
   RenderString("\n");
-  await DrawCommands('NathanKesavaMausert@internal-Tessier-Ashpool/ICE:~ ');
+  await DrawCommands('NathanKMausert@internal-Tessier-Ashpool/ICE:~ ');
   RenderString("\n");
   await TypeString("npm run tessier.js");
   await DrawLines( tessier );
@@ -119,7 +119,7 @@ Nathan Kesava Mausert
   await TypeString('// You better keep your promise Case. Delete me after this. //')
   RenderString("\n");
   await Delay(2000);
-  await DrawCommands('/:~ ssh NathanKesavaMausert@internal-Tessier-Ashpool');
+  await DrawCommands('/:~ ssh NathanKMausert@internal-Tessier-Ashpool');
   RenderString("\n");
   await TypeString('KEY=3db7ca618243da1ba3bc76ab14bcf07b');
   RenderString("\n");
