@@ -11,6 +11,7 @@ import Projects from './Components/Projects';
 import Resume from './Components/Resume';
 import Skills from './Components/Skills';
 import RunAbout from './Components/RunAbout';
+import Observe from './Components/Observation';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/projects' element={<Projects/>} />
         <Route path='/resume' element={<Resume/>} />
         <Route path='/skills' element={<Skills/>} />
+        <Route path='/observe' element={<Observe/>} />
       </Routes>
     </main>
   );
