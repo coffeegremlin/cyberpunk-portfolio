@@ -6,8 +6,7 @@ import DaemonChoice from './Nav';
 const Skills = () => {
   return (
     <>
-    <DaemonChoice/>
-
+      <DaemonChoice/>
     </>
   )
 }

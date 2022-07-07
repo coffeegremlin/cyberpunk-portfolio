@@ -96,9 +96,9 @@ Nathan K Mausert
   }
 
   (async()=> {
-  await DrawCommands("/:~ ssh NathanKMausert@internal-Tessier-Ashpool -p 2000");
+  await DrawCommands("/:~ ssh NateM@internal-Tessier-Ashpool -p 2000");
   await Delay(1000);
-  RenderString("NathanKMausert@internal-Tessier-Ashpool password: LOCKED");
+  RenderString("NateM@internal-Tessier-Ashpool password: LOCKED");
   await Delay(2000);
   RenderString("\n");
   await TypeString("npm run Kuang.js");
@@ -108,7 +108,7 @@ Nathan K Mausert
   await Delay(500);
   RenderString('\ntessier.js  FREESIDE-SERVER.js  BOCKRIS-SERVER.js');
   RenderString("\n");
-  await DrawCommands('NathanKMausert@internal-Tessier-Ashpool/ICE:~ ');
+  await DrawCommands('NateM@internal-Tessier-Ashpool/ICE:~ ');
   RenderString("\n");
   await TypeString("npm run tessier.js");
   await DrawLines( tessier );
@@ -119,7 +119,7 @@ Nathan K Mausert
   await TypeString('// You better keep your promise Case. Delete me after this. //')
   RenderString("\n");
   await Delay(2000);
-  await DrawCommands('/:~ ssh NathanKMausert@internal-Tessier-Ashpool');
+  await DrawCommands('/:~ ssh NateM@internal-Tessier-Ashpool');
   RenderString("\n");
   await TypeString('KEY=3db7ca618243da1ba3bc76ab14bcf07b');
   RenderString("\n");

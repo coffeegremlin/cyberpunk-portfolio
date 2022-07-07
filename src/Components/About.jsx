@@ -14,7 +14,7 @@ const About = (props) => {
     return(
       <>
         <h5>Kuang MK IV I.C.E. Breaker loaded.</h5>
-        <h5>target.FREESIDE-SERVER.js /:~ NATHAN-MAUSERT-PORTFOLIO Node.js</h5>
+        <h5>target.FREESIDE-SERVER.js /:~ NATE-M-PORTFOLIO Node.js</h5>
         <h5>FILE: '../../Information/ABOUTME.txt'</h5>
         <h3>Ready Case?</h3>
         <NavLink className='daemonLink' to='/runAbout'>[Let's ride console cowboy]</NavLink>

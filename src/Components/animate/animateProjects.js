@@ -105,9 +105,9 @@ for( const line of commands.split('\n')){
 }
 
 (async()=> {
-await DrawCommands("/:~ ssh NathanMausert@internal-Tessier-Ashpool -p 2000");
+await DrawCommands("/:~ ssh NateM@internal-Tessier-Ashpool -p 2000");
 await Delay(1000);
-RenderString("NathanMausert@internal-Tessier-Ashpool: ACCESS GRANTED");
+RenderString("NateM@internal-Tessier-Ashpool: ACCESS GRANTED");
 await Delay(2000);
 RenderString("\n");
 await TypeString("\n(freeside-server) -> git:(main)");

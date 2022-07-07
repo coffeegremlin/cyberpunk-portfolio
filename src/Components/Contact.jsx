@@ -20,10 +20,10 @@ const Contact = () => {
         </a>
 
         {/* <a
-          href="tel:5187087160"
+          href="tel:nope"
           onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"
         >
-          518-708-7160
+          nope
         </a> */}
 
         <a

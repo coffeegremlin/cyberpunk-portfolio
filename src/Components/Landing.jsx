@@ -53,7 +53,7 @@ const Landing = (props) => {
             </div>
           </div>
           <div className='box'>
-            © Nathan K Mausert 2022
+            © Nathan Mausert 2022
           </div>
         </div>
       </div>
