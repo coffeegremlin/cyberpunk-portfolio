@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../Styles/About.css'
 import DaemonChoice from './Nav';
+import TextPortrait from './TextPortrait'
 import { NavLink } from 'react-router-dom';
 
 // Assets
@@ -45,6 +46,8 @@ const About = (props) => {
     <DaemonChoice/>
       {showTerminal ? <Terminal/> : <Terminal1/>}
     <br/>
+    <br/>
+    <TextPortrait/>
     </>
   )
   
