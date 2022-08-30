@@ -75,7 +75,7 @@ pre {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(255,255,255,0.02);
+	background: rgba(255,255,255,0.03);
   background-repeat: repeat-y;
 	animation: scanline 8s linear infinite;
 	pointer-events: none;

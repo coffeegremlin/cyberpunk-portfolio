@@ -13,7 +13,7 @@ const DaemonChoice = () => {
 
   return (
     <>
-      {/* Add in conditional rendering you fuck */}
+      {/* Add in conditional rendering you moron */}
       <div className='Daemons'>
         <h1>Navigation Controls</h1>
         <div className='daemonStorage'>

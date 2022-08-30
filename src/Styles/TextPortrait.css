@@ -1,33 +1,42 @@
 body {
-    margin: 0;
-    padding: 0;
-    overflow: auto;
+    margin: 10;
+    padding: 10;
+    overflow: scroll;
 }
 
 .wrapper {
-    height: 30vh;
-    width: 85vw;
+    height: 10vh;
+    width: 50vw;
     background: #000;
     /*This part is important for centering*/
     display: grid;
-    place-items: center;
+    align-items: end;
+    justify-items: stretch;
 }
 
-/* @media only screen and (max-width:500px){
-    
-} */
 
 .portrait {
     font-size: 10px;
     line-height: 10px;
-    background: url('https://i.imgur.com/6yXCTPY.jpg') fixed center no-repeat;
+    background: url('https://i.imgur.com/N0dLQjf.jpg') fixed center no-repeat;
     background-size: contain;
-
+    
 }
 
-  /* This part is important for the feature itself */
+/* This part is important for the feature itself */
 .portrait {
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255,0,0,.2);
+    -webkit-text-fill-color: rgba(255,0,0,.3);
+}
+
+@media only screen and (max-width:500px){
+    .wrapper {
+        height: 20vh;
+        width: 90vw;
+        background: #000;
+        display: grid;
+        align-items: end;
+        justify-items: stretch;
+    } 
 }

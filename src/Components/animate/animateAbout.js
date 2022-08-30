@@ -4,20 +4,20 @@ function animateAbout () {
 
   const tessier = String.raw`
 
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
- ______   ______     ______     ______     __     ______     ______        
-/\__  _\ /\  ___\   /\  ___\   /\  ___\   /\ \   /\  ___\   /\  == \       
-\/_/\ \/ \ \  __\   \ \___  \  \ \___  \  \ \ \  \ \  __\   \ \  __<       
-   \ \_\  \ \_____\  \/\_____\  \/\_____\  \ \_\  \ \_____\  \ \_\ \_\     
-    \/_/   \/_____/   \/_____/   \/_____/   \/_/   \/_____/   \/_/ /_/     
-                                                                          
- ______     ______     __  __     ______   ______     ______     __        
-/\  __ \   /\  ___\   /\ \_\ \   /\  == \ /\  __ \   /\  __ \   /\ \       
-\ \  __ \  \ \___  \  \ \  __ \  \ \  _-/ \ \ \/\ \  \ \ \/\ \  \ \ \____  
- \ \_\ \_\  \/\_____\  \ \_\ \_\  \ \_\    \ \_____\  \ \_____\  \ \_____\ 
-  \/_/\/_/   \/_____/   \/_/\/_/   \/_/     \/_____/   \/_____/   \/_____/ 
-                                                                          
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+ ______  ______    ______    ______     __     ______     ______    
+/\__  _\/\  ___\  /\  ___\  /\  ___\   /\ \   /\  ___\   /\  == \   
+\/_/\ \/\ \  __\  \ \___  \ \ \___  \  \ \ \  \ \  __\   \ \  __<   
+   \ \_\ \ \_____\ \/\_____\ \/\_____\  \ \_\  \ \_____\  \ \_\ \_\ 
+    \/_/  \/_____/  \/_____/  \/_____/   \/_/   \/_____/   \/_/ /_/ 
+                                                                    
+ ______    ______    __  __    ______  ______    ______    __        
+/\  __ \  /\  ___\  /\ \_\ \  /\  == \/\  __ \  /\  __ \  /\ \      
+\ \  __ \ \ \___  \ \ \  __ \ \ \  _-/\ \ \/\ \ \ \ \/\ \ \ \ \____ 
+ \ \_\ \_\ \/\_____\ \ \_\ \_\ \ \_\   \ \_____\ \ \_____\ \ \_____\
+  \/_/\/_/  \/_____/  \/_/\/_/  \/_/    \/_____/  \/_____/  \/_____/
+                                                                    
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 `;
 
   const Kuang = String.raw`
@@ -25,7 +25,7 @@ function animateAbout () {
 
 About Me:
 
-I'm a Los Angeles based developer. When it comes to my work, 
+I'm a West coast based developer. When it comes to my work, 
 I have interests in projects that improve users lives.
 I aim to solve problems on both interpersonal and logistical levels.
 I'm driven by a passion for providing tangible 
@@ -36,14 +36,14 @@ My background in medical welding and project head management
 of prototype cryogenic pressure vessels and my B.S. in 
 Audio Engineering have given me solid troubleshooting fundamentals, 
 and aptitude for managing expansive projects with unexpected issues.
-My education at General Assembly has given me practical hands-on experience with
-computer science fundamentals and the industries most in demand technologies.
-Currently, I'm looking for a remote role in full stack web development,
-or hybrid entry-level role in game development!
+My time with General Assembly has given me practical experience with
+computer science fundamentals and the industries most 
+in demand technologies. Currently, I'm looking for a remote role in 
+full stack web development, or entry-level role in game dev!
 Also I'm a fan of William Gibson's Neuromancer.
 
 See you in Chiba City,
-Nathan K Mausert
+Nathan Mausert
 
 <--- FILE END --->
 `;

@@ -19,6 +19,10 @@ const About = (props) => {
         <h5>FILE: '../../Information/ABOUTME.txt'</h5>
         <h3>Ready Case?</h3>
         <NavLink className='daemonLink' to='/runAbout'>[Let's ride console cowboy]</NavLink>
+        <br />
+        <br />
+        <h5>FILE: '../../Information/NATHAN-RENDER.PNG</h5>
+        <TextPortrait/>
       </>
     )
   }
@@ -45,9 +49,7 @@ const About = (props) => {
     <>
     <DaemonChoice/>
       {showTerminal ? <Terminal/> : <Terminal1/>}
-    <br/>
-    <br/>
-    <TextPortrait/>
+    <br />
     </>
   )
   

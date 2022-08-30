@@ -8,15 +8,28 @@
 @keyframes glitch {
 	2%,
 	64% {
-		transform: translate(2px, 0) skew(0deg);
+		transform: translate(1px, 0) skew(0deg);
 	}
 	4%,
 	60% {
-		transform: translate(-2px, 0) skew(2deg);
+		transform: translate(-1px, 0) skew(1deg);
 	}
 	62% {
 		transform: translate(0px, 0) skew(5deg);
 	}
+}
+
+#autherror {
+  animation-play-state: paused;
+  animation: glitch .01s linear infinite;
+  color: red;
+  background: url(https://image.ibb.co/h2hLAJ/bg.png) #000;
+  transition: opacity .5s;
+  text-shadow: 0 0 5px rgba(219, 255, 255, .9);
+}
+
+.daemonLink:hover {
+  animation-play-state: paused;
 }
 
 span.amp {
