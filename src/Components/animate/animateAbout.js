@@ -4,20 +4,19 @@ function animateAbout () {
 
   const tessier = String.raw`
 
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
- ______  ______    ______    ______     __     ______     ______    
-/\__  _\/\  ___\  /\  ___\  /\  ___\   /\ \   /\  ___\   /\  == \   
-\/_/\ \/\ \  __\  \ \___  \ \ \___  \  \ \ \  \ \  __\   \ \  __<   
-   \ \_\ \ \_____\ \/\_____\ \/\_____\  \ \_\  \ \_____\  \ \_\ \_\ 
-    \/_/  \/_____/  \/_____/  \/_____/   \/_/   \/_____/   \/_/ /_/ 
-                                                                    
- ______    ______    __  __    ______  ______    ______    __        
-/\  __ \  /\  ___\  /\ \_\ \  /\  == \/\  __ \  /\  __ \  /\ \      
-\ \  __ \ \ \___  \ \ \  __ \ \ \  _-/\ \ \/\ \ \ \ \/\ \ \ \ \____ 
- \ \_\ \_\ \/\_____\ \ \_\ \_\ \ \_\   \ \_____\ \ \_____\ \ \_____\
-  \/_/\/_/  \/_____/  \/_/\/_/  \/_/    \/_____/  \/_____/  \/_____/
-                                                                    
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+ ______  ______   ______   ______   __   ______   ______       
+/\__  _\/\  ___\ /\  ___\ /\  ___\ /\ \ /\  ___\ /\  == \      
+\/_/\ \/\ \  __\ \ \___  \\ \___  \\ \ \\ \  __\ \ \  __<      
+   \ \_\ \ \_____\\/\_____\\/\_____\\ \_\\ \_____\\ \_\ \_\    
+    \/_/  \/_____/ \/_____/ \/_____/ \/_/ \/_____/ \/_/ /_/    
+ ______   ______   __  __   ______  ______   ______   __       
+/\  __ \ /\  ___\ /\ \_\ \ /\  == \/\  __ \ /\  __ \ /\ \      
+\ \  __ \\ \___  \\ \  __ \\ \  _-/\ \ \/\ \\ \ \/\ \\ \ \____ 
+ \ \_\ \_\\/\_____\\ \_\ \_\\ \_\   \ \_____\\ \_____\\ \_____\
+  \/_/\/_/ \/_____/ \/_/\/_/ \/_/    \/_____/ \/_____/ \/_____/
+                                                               
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 `;
 
   const Kuang = String.raw`
@@ -27,20 +26,21 @@ About Me:
 
 I'm a West coast based developer. When it comes to my work, 
 I have interests in projects that improve users lives.
-I aim to solve problems on both interpersonal and logistical levels.
-I'm driven by a passion for providing tangible 
-and meaningful results I can be proud of.
-My aim is to offer well thought out and expertly crafted solutions
-to complex problems with intention and strong communication skills.
-My background in medical welding and project head management
-of prototype cryogenic pressure vessels and my B.S. in 
-Audio Engineering have given me solid troubleshooting fundamentals, 
-and aptitude for managing expansive projects with unexpected issues.
-My time with General Assembly has given me practical experience with
-computer science fundamentals and the industries most 
-in demand technologies. Currently, I'm looking for a remote role in 
-full stack web development, or entry-level role in game dev!
-Also I'm a fan of William Gibson's Neuromancer.
+I aim to solve problems on both interpersonal and 
+logistical levels. I'm driven by a passion for providing
+tangible and meaningful results I can be proud of.
+My aim is to offer well thought out and expertly crafted
+solutions to complex problems with intention and strong
+communication skills. My background in teaching Full-Stack
+Development with General Assembly and project head management
+of prototype cryogenic pressure vessels and my B.S. in Audio
+Engineering have given me solid troubleshooting skills, and
+an aptitude for managing expansive projects with
+unexpected issues. My time with General Assembly has given me
+practical experience with CS fundamentals and skill with
+in demand industry technologies. Currently, I'm looking for
+an entry level remote role in full stack web development!
+Also I'm a massive fan of William Gibson's Neuromancer.
 
 See you in Chiba City,
 Nathan Mausert
