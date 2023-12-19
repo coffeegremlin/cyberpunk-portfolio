@@ -33,7 +33,7 @@ const Projects = () => {
         <div className='daemonLink'>
           <a href="https://lfgpls.herokuapp.com/" target="_blank" rel="noopener noreferrer">LFG</a> / <a href="https://github.com/coffeegremlin/lfg" target="_blank" rel="noopener noreferrer">GitHub</a>
           <br/>
-          <a href="https://codingcooler.herokuapp.com/" target="_blank" rel="noopener noreferrer">CODINGCOOLER</a> / <a href="https://github.com/coffeegremlin/codingcooler" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://coding-cooler.fly.dev/" target="_blank" rel="noopener noreferrer">CODINGCOOLER</a> / <a href="https://github.com/coffeegremlin/codingcooler" target="_blank" rel="noopener noreferrer">GitHub</a>
           <br/>
           <a href="https://monster-hunter-lists.herokuapp.com/" target="_blank" rel="noopener noreferrer">Monster-Hunter</a> / <a href="https://github.com/coffeegremlin/Monster-Hunter-Lists" target="_blank" rel="noopener noreferrer">GitHub</a>
           <br/>
